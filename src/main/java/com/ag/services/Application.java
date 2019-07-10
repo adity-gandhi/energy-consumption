@@ -1,11 +1,3 @@
-/**
- *******************************************************
- * Copyright (c) 2019 Prefab, PublicisSapient
- * 
- * This file is part of Prefab project.
- * 
- *******************************************************
- */
 
 package com.ag.services;
 

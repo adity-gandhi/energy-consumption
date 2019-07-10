@@ -1,11 +1,3 @@
-/**
- *******************************************************
- * Copyright (c) 2019 Prefab, PublicisSapient
- * 
- * This file is part of Prefab project.
- * 
- *******************************************************
- */
 
 package com.ag.services;
 
@@ -30,7 +22,7 @@ public class SwaggerConfig {
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
-          .apis(RequestHandlerSelectors.basePackage("com.prefab.services.springboot.controller"))             
+          .apis(RequestHandlerSelectors.basePackage("com.ag.services.springboot.controller"))             
           .paths(PathSelectors.any())                          
           .build()
           .apiInfo(getApiInfo());                                           
@@ -38,11 +30,11 @@ public class SwaggerConfig {
 
 	private ApiInfo getApiInfo() {
 		 return new ApiInfo(
-				 "Prefab Greeting API",
+				 "Energy Consumption API",
 				 "This API is to greet the user visiting Prefab Greeting Service", 
 				 "1.0", 
 				 null, 
-				 new Contact("Publicis Sapient", "www.publicissapient.com", null), 
+				 new Contact("Aditya Gandhi", "www.publicissapient.com", null), 
 				 null, 
 				 null, 
 				 Collections.emptyList());
