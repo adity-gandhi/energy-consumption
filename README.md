@@ -1,4 +1,4 @@
-# ◤◣ energy consumption
+# energy consumption
 
 ## energy consumption service
 Service to get energy consumption
@@ -16,7 +16,7 @@ Service to get energy consumption
 
 ````
 > cd energy-consumption
-> docker build -t ps/energy-consumption:latest .
+> docker build -t ag/energy-consumption:latest .
 ````
 
 ### Run Docker Image
@@ -24,7 +24,7 @@ Service to get energy consumption
 ```
 There are two port 8080 (service) and 8081 (monitoring)
 
-> docker run --rm -p8080:8080 -p8081:8081 -it  ps/energy-consumption
+> docker run --rm -p8080:8080 -p8081:8081 -it  ag/energy-consumption
 ```
 
 #### Service Endpoints
