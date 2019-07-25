@@ -31,7 +31,7 @@ There are two port 8080 (service) and 8081 (monitoring)
 
 ```
 > Swagger UI Endpoint -> localhost:8080/swagger-ui.html
-> Conmsumption Service Endpoint -> localhost:8080/energyConsumption?product=<<productName>>
+> Consumption Service Endpoint -> localhost:8080/energyConsumption?product=<<productName>>
 ```
 
 #### Monitoring Endpoints
@@ -40,6 +40,7 @@ There are two port 8080 (service) and 8081 (monitoring)
 > Info Endpoint -> localhost:8081/monitor/info
 > Heath Endpoint -> localhost:8081/monitor/health
 > Metrics Endpoint -> localhost:8081/monitor/metrics
+>> to get info on a particular metric use localhost:8081/monitor/metrics/{MetricName}
 
 > Business Metric for energy consumption --> localhost:8081/monitor/metrics/energyConsumption
 ```
