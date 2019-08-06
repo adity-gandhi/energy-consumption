@@ -1,5 +1,5 @@
 
-package com.ag.services;
+package com.ag.energyconsumption;
 
 import java.util.Collections;
 

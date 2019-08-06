@@ -1,8 +1,9 @@
-package com.ag.services.model;
+package com.ag.energyconsumption.model;
 
 import java.math.BigDecimal;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,13 +14,14 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode
 public class EnergyConsumptionData {
 	
-	private String product;
-	private String fullName;
-	private String api;
-	private String key;
-	private String units;
-	private BigDecimal quantity2019;
+	protected String product;
+	protected String fullName;
+	protected String api;
+	protected String key;
+	protected String units;
+	protected BigDecimal quantity2019;
 
 }

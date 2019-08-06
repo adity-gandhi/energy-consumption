@@ -18,7 +18,17 @@
 		<java.version>1.8</java.version>
 		<io.springfox.version>2.9.2</io.springfox.version>
 	</properties>
-
+<dependencyManagement>
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-releasetrain</artifactId>
+        <version>Hopper-SR10</version>
+        <type>pom</type>
+        <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,8 +56,17 @@
 		     <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.16</version>
-     </dependency>
+            </dependency>
+       <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-dynamodb</artifactId>
+        <version>1.11.34</version>
+    </dependency>
 	</dependencies>
 		
 	<build>
